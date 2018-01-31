@@ -104,7 +104,7 @@ class setReminderViewController: UIViewController, UIImagePickerControllerDelega
             trigger = UNCalendarNotificationTrigger(dateMatching: dateComponents, repeats: false)
         }
         //set name
-        reminderCategory = "kids"
+        //reminderCategory = "kids"
         let notificationName = reminderCategory!+"-notification"
         
         

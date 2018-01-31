@@ -27,15 +27,16 @@ class reminderDashboardViewController: UIViewController {
         controller.callingController = "rise"
         self.navigationController?.pushViewController(controller, animated: true)
     }
-    @IBAction func relsButton(_ sender: Any) {
+    @IBAction func relsButton2(_ sender: Any) {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let controller = storyboard.instantiateViewController(withIdentifier: "categoryViewController") as! categoryViewController
         controller.callingController = "rels"
         self.navigationController?.pushViewController(controller, animated: true)
     }
 
+
     @IBAction func kidsButton(_ sender: Any) {
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+    let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let controller = storyboard.instantiateViewController(withIdentifier: "categoryViewController") as! categoryViewController
         controller.callingController = "kids"
         self.navigationController?.pushViewController(controller, animated: true)

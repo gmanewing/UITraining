@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="VKM-hO-AsD">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -21,6 +21,9 @@
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="3pM-UB-if7"/>
+                    </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dg0-sv-JYq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -187,6 +190,7 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="jVP-7q-h9u"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -227,7 +231,6 @@
                                                         <state key="normal" image="1. RISE AND SHINE-01.png"/>
                                                         <connections>
                                                             <action selector="riseShine:" destination="rwo-q5-myF" eventType="touchUpInside" id="iWE-gD-qqT"/>
-                                                            <segue destination="pH4-VY-M9e" kind="show" id="4Pl-ml-tfj"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4yu-6m-PO0">
@@ -236,6 +239,9 @@
                                                             <constraint firstAttribute="width" secondItem="4yu-6m-PO0" secondAttribute="height" multiplier="10:13" id="Ce9-4h-Zav"/>
                                                         </constraints>
                                                         <state key="normal" image="2. RELATIONSHIPS-01.png"/>
+                                                        <connections>
+                                                            <action selector="relsButton2:" destination="rwo-q5-myF" eventType="touchUpInside" id="cH9-E1-KAv"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pEU-X5-vMb">
                                                         <rect key="frame" x="192" y="0.0" width="76" height="98"/>
@@ -243,6 +249,9 @@
                                                             <constraint firstAttribute="width" secondItem="pEU-X5-vMb" secondAttribute="height" multiplier="10:13" id="2Xp-a8-GXQ"/>
                                                         </constraints>
                                                         <state key="normal" image="3. KIDS-01.png"/>
+                                                        <connections>
+                                                            <action selector="kidsButton:" destination="rwo-q5-myF" eventType="touchUpInside" id="dok-9O-meB"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                             </stackView>
@@ -413,7 +422,6 @@
                                         </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="reminderButton:" destination="pH4-VY-M9e" eventType="touchUpInside" id="HQE-s6-vYc"/>
-                                            <segue destination="JSH-Yp-Yc9" kind="show" id="Fye-o9-juk"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -910,7 +918,6 @@
         <image name="white-logo-44.png" width="33" height="44"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Fye-o9-juk"/>
         <segue reference="w76-sc-sWJ"/>
     </inferredMetricsTieBreakers>
 </document>
